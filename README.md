@@ -1,46 +1,96 @@
-# Getting Started with Create React App
+# QR Code Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de um gerador de QR Code em React que permite criar QR Codes do tipo vCard e URL.
+você consegue acessar e gerar gratuitamente através da url [http://qrcode-gratis.vmtech.net.br/](http://qrcode-gratis.vmtech.net.br/)
 
-## Available Scripts
+Procurei em vários locais geradores de QRCodes, não encontrei geradores descentes e gratuítos de verdade.
+resolvi criar esse projeto open source para ajudar as pessoas a executar essa tarefa simples.
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+- Gerar QR Codes do tipo vCard e URL
+- Personalizar a cor do QR Code
+- Visualizar uma prévia da imagem do QR Code
+- Baixar o QR Code gerado em formato SVG
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tecnologias Utilizadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React
+- TypeScript
+- QRCode.react
+- FileSaver.js
 
-### `npm test`
+## Como Executar o Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pré-requisitos
 
-### `npm run build`
+Para executar este projeto, você precisa ter instalado:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js
+- npm ou yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Passos para Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/qr-code-generator.git
+   ```
 
-### `npm run eject`
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd qr-code-generator
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+   ou
+   ```bash
+   yarn install
+   ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm start
+   ```
+   ou
+   ```bash
+   yarn start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+O projeto será executado em `http://localhost:3006`.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Estrutura do Projeto
 
-## Learn More
+- `src/components/QRCodeForm.tsx`: Componente principal que contém o formulário para gerar QR Codes.
+- `src/assets/vmtech-logo.png`: Logotipo utilizado no projeto.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Como Usar
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Selecione o tipo de QR Code (vCard ou URL).
+2. Preencha os campos com as informações necessárias.
+3. Selecione a cor do QR Code.
+4. Visualize a prévia do QR Code gerado.
+5. Clique no botão de download para baixar o QR Code em formato SVG.
+
+## Contribuição
+
+Se você quiser contribuir com este projeto, siga os passos abaixo:
+
+1. Fork o repositório
+2. Crie uma branch para a sua feature (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
+4. Faça um push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+## Contato
+
+Para mais informações, entre em contato com:
+
+- [Marcos Moraes](mailto:socramjunio@gmail.com)
+- GitHub: [@socramjunio2](https://github.com/socramjunio2)
